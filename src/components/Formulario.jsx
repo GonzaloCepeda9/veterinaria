@@ -90,55 +90,55 @@ function Formulario({ pacientes, setPacientes, paciente, setPaciente }) {
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label htmlFor="mascota" className="block text-gray-700 uppercase text-xs font-bold">Nombre mascota</label>
+          <label htmlFor="mascota" className="block text-gray-700 uppercase text-[16px] font-bold">Nombre mascota</label>
           <input
             id="mascota"
             type="text"
             value={nombre}
             onChange={ (e) => setNombre(e.target.value) }
             placeholder="Nombre de la mascota"
-            className="text-xs border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
+            className="text-[16px] border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
         </div>
         <div className="mb-4">
-          <label htmlFor="propietario" className="block text-gray-700 uppercase text-xs font-bold">Propietario</label>
+          <label htmlFor="propietario" className="block text-gray-700 uppercase text-[16px] font-bold">Propietario</label>
           <input
             id="propietario"
             type="text"
             value={propietario}
             onChange={ (e) => setPropietario(e.target.value) }
             placeholder="Nombre del propietario"
-            className="text-xs border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
+            className="text-[16px] border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 uppercase text-xs font-bold">Email</label>
+          <label htmlFor="email" className="block text-gray-700 uppercase text-[16px] font-bold">Email</label>
           <input
             id="email"
             type="email"
             value={email}
             onChange={ (e) => setEmail(e.target.value) }
             placeholder="Email de contacto"
-            className="text-xs border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
+            className="text-[16px] border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
         </div>
         <div className="mb-4">
-          <label htmlFor="alta" className="block text-gray-700 uppercase text-xs font-bold">Fecha de alta</label>
+          <label htmlFor="alta" className="block text-gray-700 uppercase text-[16px] font-bold">Fecha de alta</label>
           <input
             id="alta"
             type="date"
             value={fecha}
             onChange={ (e) => setFecha(e.target.value) }
-            className="text-xs border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
+            className="text-[16px] border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
         </div>
         <div className="mb-4">
-          <label htmlFor="sintomas" className="block text-gray-700 uppercase text-xs font-bold">Síntomas</label>
+          <label htmlFor="sintomas" className="block text-gray-700 uppercase text-[16px] font-bold">Síntomas</label>
           <textarea
             id="sintomas"
             type="date"
             value={sintomas}
             onChange={ (e) => setSintomas(e.target.value) }
             placeholder="Describe los síntomas"
-            className="text-xs border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
+            className="text-[16px] border-2 w-full p-2 mt-2 placeholder-gray-400 rounded outline-blue-900" />
         </div>
-        <input type="submit" className="bg-indigo-600 text-white p-1 w-full text-xs font-bold hover:bg-indigo-500 active:bg-indigo-700 cursor-pointer rounded-md uppercase" value={paciente.id ? "Editar paciente" : "Agregar paciente"} />
+        <input type="submit" className="bg-indigo-600 text-white p-1 w-full text-[16px] font-bold hover:bg-indigo-500 active:bg-indigo-700 cursor-pointer rounded-md uppercase" value={paciente.id ? "Editar paciente" : "Agregar paciente"} />
         { error &&
         <Error>
           <p>Todos los campos son obligatorios.</p>
